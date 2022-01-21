@@ -93,8 +93,8 @@ public class PlayerMovement : MonoBehaviour
 
             var playerPosition = transform.position;
             Shoot(newBulletOne, originOne - playerPosition,  originOne, specialFireInterval);
-            Shoot(newBulletTwo, originTwo - playerPosition, originTwo, specialFireInterval);
-            Shoot(newBulletThree, originThree - playerPosition, originThree, specialFireInterval);
+            Shoot(newBulletTwo, originOne - playerPosition, originTwo, specialFireInterval);
+            Shoot(newBulletThree, originOne - playerPosition, originThree, specialFireInterval);
 
         }
         
@@ -109,8 +109,8 @@ public class PlayerMovement : MonoBehaviour
 
             var playerPosition = transform.position;
             Shoot(newBulletOne, originOne - playerPosition,  originOne, specialFireInterval);
-            Shoot(newBulletTwo, originTwo - playerPosition, originTwo, specialFireInterval);
-            Shoot(newBulletThree, originThree - playerPosition, originThree, specialFireInterval);
+            Shoot(newBulletTwo, originOne - playerPosition, originTwo, specialFireInterval);
+            Shoot(newBulletThree, originOne - playerPosition, originThree, specialFireInterval);
         }
 
         if (Mathf.Abs(_playerRigidbody.angularVelocity) > maxAngularVelocity)
